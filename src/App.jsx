@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from './components/header';
 import { ProductList } from './components/ProductList';
+import Formulario from './components/formulario/form';
 
 import './App.css'
 import Home from './assets/components/home/home'
@@ -30,6 +31,9 @@ function App() {
         setCountProducts={setCountProducts}
       />
       <Home></Home>
+
+      
+      <Formulario></Formulario>
     </>
   );
 }
