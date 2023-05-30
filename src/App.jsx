@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Header } from './components/header';
-import { ProductList } from './components/ProductList';
+import { Header } from './components/producto/Header';
+import { ProductList } from './components/producto/ProductList';
 import Formulario from './components/formulario/form';
 
 import './App.css'
-import Home from './assets/components/home/home'
+import Home from './components/home/home';
 
 function App() {
 
