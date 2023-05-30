@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { Header } from './components/header';
 import { ProductList } from './components/ProductList';
 
+import './App.css'
+import Home from './assets/components/home/home'
+
 function App() {
 
   const [allProducts, setAllProducts]=useState([]);
@@ -26,6 +29,7 @@ function App() {
         countProducts={countProducts}
         setCountProducts={setCountProducts}
       />
+      <Home></Home>
     </>
   );
 }

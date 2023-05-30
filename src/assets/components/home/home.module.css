@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .cuerpo {
+  background-color: aqua;
+} */
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  height: 100vh;
+  width: auto;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header nav {
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: 2;
+  /* background-color: beige; */
+  height: 7vh;
+  width: auto;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  /* position: fixed; */
+}
+
+.contenedorLogo {
+  grid-column: 1;
+}
+.menuCabecera {
+  grid-column: 2;
+}
+.menuCabecera a{
+  text-decoration: none;
+  color: black;
+}
+.menuCabecera a:hover{
+  text-decoration: underline;
+  color: black;
+}
+.menuCabecera ul {
+  list-style: none;
+  display: flex;
+  gap: 2%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portada {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 2;
+  /* gap: 10px; */
+  /* background-color: blueviolet; */
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.contenedorTextoCabecera {
+  grid-column: 1;
+  width: 50%;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+.botonCrearCuentaCabecera {
+  /* background-color: brown; */
+  display: block;
+  width: 30%;
+  height: 4vh;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.botonCrearCuentaCabecera:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.botonCrearCuentaCabecera:active {
+  background-color: #3e8e41;
+  transform: scale(0.95);
+}
+
+.botonCrearCuentaCabecera:focus {
+  outline: none;
+}
+
+.botonCrearCuentaCabecera:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Opcional: Estilos adicionales para un efecto de sombra al presionar el botón */
+
+.botonCrearCuentaCabecera:active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.botonIngresarCabecera {
+  display: block;
+  width: 30%;
+  height: 4vh;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botonIngresarCabecera:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.botonIngresarCabecera:active {
+  background-color: #21618c;
+  transform: scale(0.95);
+}
+
+.botonIngresarCabecera:focus {
+  outline: none;
+}
+
+.botonIngresarCabecera:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Opcional: Estilos adicionales para un efecto de sombra al presionar el botón */
+
+.botonIngresarCabecera:active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.contenedorImagenCabecera {
+  grid-column: 2;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
