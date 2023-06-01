@@ -29,7 +29,7 @@ export const Nav = () => {
         </Link>
         <div>
         <ul>
-          <Link to="/Formulario" style={{textDecoration:"none"}}>
+          <Link to="/Ingresa" style={{textDecoration:"none"}}>
             <li>
               <div
                 className={Styles.botonIngresarCabecera}
@@ -39,7 +39,7 @@ export const Nav = () => {
               </div>
             </li>
           </Link>
-          <Link to="/Header" style={{textDecoration:"none"}}>
+          <Link to="/Formulario" style={{textDecoration:"none"}}>
             <li>
               <div
                 className={Styles.botonCrearCuentaCabecera} 

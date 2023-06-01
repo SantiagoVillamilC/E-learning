@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Header } from './components/producto/Header';
 import { ProductList } from './components/producto/ProductList';
 import Formulario from './components/formulario/form';
+import Ingresa from './components/formulario/formIngresa';
+import { UserProvider } from './components/formulario/userProvider';
 
 import './App.css'
 import Home from './components/home/home';
@@ -32,6 +34,8 @@ export const App = () => {
         setTotal={setTotal}
         countProducts={countProducts}
         setCountProducts={setCountProducts}/> ]}/>
+        <Route path='/Ingresa' element={<UserProvider><Ingresa/></UserProvider>} />
+     
       <Route path='/Formulario' element={<Formulario/>}/>
       <Route path = "*" element = {<NotFound/>}/>
     </Routes>
