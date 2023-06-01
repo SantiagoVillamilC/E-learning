@@ -18,7 +18,7 @@ const Programacion = () => {
 
   return (
     <div>
-      <h1>Programación básica y avanzada</h1>
+      <h1>Bienvenidos a este curso</h1>
       <div>
         {/* Reproductor de video de YouTube */}
         <iframe
