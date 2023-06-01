@@ -6,9 +6,10 @@ function Home() {
   return (
     <div className={Style.cuerpo}>
       <header className={Style.header}>
-        {/* <Nav/> */}
         <div className={Style.portada}>
           <div className={Style.contenedorTextoCabecera}>
+            <div className={Style.contenedorSlogan}><h2>"Domina el Código, Domina tu Futuro"</h2></div>
+            
             <h1>No necesitas ser un genio para programar</h1>
             <div className={Style.botonCrearCuentaCabecera}>Crea tu cuenta gratis</div>
             <div className={Style.botonIngresarCabecera}>Ingresa</div>

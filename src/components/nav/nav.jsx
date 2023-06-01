@@ -12,42 +12,45 @@ export const Nav = () => {
   return (
     <>
       <nav>
-        
-        <div className={Styles.menuCabecera}>
+        <div className={Styles.menuCabecera} style={{marginLeft:"5%"}}>
           <ul>
-            <a href="">
-              <li>Cursos</li>
+            <a href="" style={{textDecoration:"none"}}>
+              <li>¿Que es?</li>
             </a>
-            <a href="">
+            <a href="" style={{textDecoration:"none"}}>
               <li>¿Cómo funciona?</li>
             </a>
-            <Link to="/Formulario">
-              <li>
-                <div
-                  className={Styles.botonIngresarCabecera}
-                //   style={{ width: "70%", height: "3vh" }}
-                >
-                  Acceder
-                </div>
-              </li>
-            </Link>
-            <Link to="/Header">
-              <li>
-                <div
-                  className={Styles.botonCrearCuentaCabecera}
-                //   style={{ width: "70%", height: "3vh", margin: "0" }}
-                >
-                  Crear cuenta
-                </div>
-              </li>
-            </Link>
           </ul>
         </div>
-        <Link to={"/"}>
-          <div className={Styles.contenedorLogo}>
-            <h2>CodeGenius</h2>
+        <Link to={"/"} style={{textDecoration:"none"}}>
+          <div className={Styles.contenedorLogo} >
+            <h2>CodeGenius<span style={{color:"#FD6584"}}>_</span></h2>
           </div>
         </Link>
+        <div>
+        <ul>
+          <Link to="/Formulario" style={{textDecoration:"none"}}>
+            <li>
+              <div
+                className={Styles.botonIngresarCabecera}
+                //   style={{ width: "70%", height: "3vh" }}
+              >
+                Acceder
+              </div>
+            </li>
+          </Link>
+          <Link to="/Header" style={{textDecoration:"none"}}>
+            <li>
+              <div
+                className={Styles.botonCrearCuentaCabecera} 
+                //   style={{ width: "70%", height: "3vh", margin: "0" }}
+              >
+                Crear cuenta
+              </div>
+            </li>
+          </Link>
+        </ul>
+        </div>  
       </nav>
     </>
   );

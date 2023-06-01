@@ -19,7 +19,6 @@ export const App = () => {
   return (
     <>
     <Nav/>
-
     <Routes>
       <Route path='/' element={<Home/>}/>
         <Route path='/Header' element={[<Header  allProducts={allProducts} 

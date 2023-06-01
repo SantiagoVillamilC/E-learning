@@ -1,19 +1,19 @@
 /* Globales */
 /* Globales */
-*::after,
+/* *::after,
 *::before,
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
 	margin: 0 auto;
 	max-width: 1200px;
 	font-family: 'Lato';
 	color: #333;
-}
+} */
 
 .icon-cart {
 	width: 40px;
@@ -25,16 +25,16 @@ body {
 	cursor: pointer;
 }
 
-img {
+/* img {
 	max-width: 100%;
-}
+} */
 
 /* Header */
-header {
+/* header {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px 0 40px 0;
-}
+} */
 
 .container-icon {
 	position: relative;

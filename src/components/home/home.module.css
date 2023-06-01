@@ -2,16 +2,23 @@
   margin: 0;
   padding: 0;
 }
+html{
+  margin: 0;
+  padding: 0;
+  /* background-color: #45a049;*/
+}
 
-/* .cuerpo {
+.cuerpo {
   background-color: aqua;
-} */
+  width: 100%;
+}
 
-.header {margin-top: 0;
+.header {
+  margin-top: 0 ;
   display: grid;
-  grid-template-rows: repeat(2, auto);
-  height: 100vh;
-  width: auto;
+  /* grid-template-rows: repeat(2, auto); */
+  height: 90vh;
+  width: 100%;
 }
 
 header h1 {
@@ -28,49 +35,34 @@ header h1 {
   padding-left: 1%;
   padding-right: 1%;
 } */
-
-.contenedorLogo {
-  grid-column: 1;
-}
-.menuCabecera {
-  grid-column: 2;
-}
-.menuCabecera a{
-  text-decoration: none;
-  color: black;
-}
-.menuCabecera a:hover{
-  text-decoration: underline;
-  color: black;
-}
-.menuCabecera ul {
-  list-style: none;
-  display: flex;
-  gap: 2%;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .portada {
   grid-row: 2;
   display: grid;
-  grid-template-rows: 2;
+  /* grid-template-rows: 2; */
   /* gap: 10px; */
   /* background-color: blueviolet; */
-  height: 91vh;
-  display: flex;
+  height: 80vh;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   /* flex-direction: column; */
 }
 
 .contenedorTextoCabecera {
   grid-column: 1;
   width: 50%;
-  text-align: center;
-  display: grid;
-  justify-content: center;
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; */
 }
+.contenedorSlogan{
+  width: 40vw;
+  background-color: #45a049;
+}
+
+
 
 .botonCrearCuentaCabecera {
   /* background-color: brown; */

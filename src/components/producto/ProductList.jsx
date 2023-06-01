@@ -1,6 +1,7 @@
 import React from "react";
 import { data } from '../../data';
 import "./producto.css";
+import { Header } from "./Header";
 
 export const ProductList = ({ 
     allProducts, 
@@ -29,6 +30,7 @@ export const ProductList = ({
     };
 
     return <div className='container-items'>{
+       
         data.map(product => (
             <div className='item' key={product.id}>
                 <figure>
