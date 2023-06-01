@@ -18,7 +18,18 @@ export function UserProvider(props){
     function Ingresa(){
         if(user){
           setUser(null);
-        }else{
+        }
+        else{
+          setUser({
+            name: 'cami',
+            email: 'cami@gmail.com',
+            password: 12345,
+          });
+          setUser({
+            name: 'santiago',
+            email: 'santiago@gmail.com',
+            password: 12345,
+          });
           setUser({
             name: 'cami',
             email: 'cami@gmail.com',

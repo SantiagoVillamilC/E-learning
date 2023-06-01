@@ -91,7 +91,7 @@ function Ingresa(){
                    </div>
                    {/* LINKEAR A TIENDA */}
                    <button onClick={Ingresa}>Ingresa</button>
-                   {user && <p>Puedes ingresar {user.name}</p>}
+                   {user && <p>BIENVENID@</p>}
                 </Form>
                 )}
             </Formik>
