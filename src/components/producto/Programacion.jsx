@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Style from "./programacion.module.css"
 
 const Programacion = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -31,9 +32,9 @@ const Programacion = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
+      <div className={Style.botones}>
         {/* Botones de control del video */}
-        <button onClick={playVideo}>Reproducir</button>
+        <button onClick={playVideo}>Reprodcir</button>
         <button onClick={pauseVideo}>Pausar</button>
         <button onClick={stopVideo}>Finalizar</button>
       </div>
