@@ -25,16 +25,6 @@ export function UserProvider(props){
             email: 'camipe@gmail.com',
             password: 1,
           });
-          setUser({
-            name: 'santiago',
-            email: 'santiago@gmail.com',
-            password: 12345,
-          });
-          setUser({
-            name: 'yeison',
-            email: 'yeison@gmail.com',
-            password: 12345,
-          });
         }
       }
 
