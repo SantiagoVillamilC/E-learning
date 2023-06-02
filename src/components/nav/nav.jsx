@@ -14,9 +14,11 @@ export const Nav = () => {
       <nav>
         <div className={Styles.menuCabecera} style={{marginLeft:"5%"}}>
           <ul>
-            <a href="" style={{textDecoration:"none"}}>
-              <li>¿Que es?</li>
+            <Link to={"/"} style={{textDecoration:"none"}}>
+            <a href="#sectionQue" style={{textDecoration:"none"}}>
+              <li >¿Que es?</li>
             </a>
+            </Link>
             <a href="" style={{textDecoration:"none"}}>
               <li>¿Cómo funciona?</li>
             </a>
