@@ -51,16 +51,6 @@ export const Nav = () => {
               </div>
             </li>
           </Link>
-          <Link to="/Header" style={{textDecoration:"none"}}>
-            <li>
-              <div
-                className={Styles.botonCrearCuentaCabecera} 
-                //   style={{ width: "70%", height: "3vh", margin: "0" }}
-              >
-                Ver Cursos
-              </div>
-            </li>
-          </Link>
         </ul>
         </div>  
       </nav>
