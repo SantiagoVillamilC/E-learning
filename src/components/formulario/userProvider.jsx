@@ -22,8 +22,8 @@ export function UserProvider(props){
         else{
           setUser({
             name: 'cami',
-            email: 'cami@gmail.com',
-            password: 12345,
+            email: 'camipe@gmail.com',
+            password: 1,
           });
           setUser({
             name: 'santiago',

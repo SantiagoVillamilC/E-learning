@@ -1,11 +1,12 @@
 import { useUserContext, useUserToggleContext } from './userProvider';
 import {Formik, Form, Field, ErrorMessage } from 'formik';
-// import {useHistory} from 'react-router-dom'
 import Styles from './form.module.css';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 function Ingresa(){
 
-    // const history = useHistory();
+    const MySwal = withReactContent(Swal)
    
     const user = useUserContext();
     const Ingresa = useUserToggleContext();
@@ -13,9 +14,26 @@ function Ingresa(){
     const enviarDatos = (formValues, {resetForm}) =>{
    
         resetForm();
-        // history.push('/Header');
+
+        MySwal.fire({
+            title: user && <p>BIENVENID@</p>,
+            didOpen: () => {
+              
+              MySwal.showLoading()
+              setTimeout(() => {
+                window.location.href = "Header";
+              }, 3000);
+            }
+        }).then((result) => {
+                if (result.isConfirmed) {
+                  window.location.href = "Header";
+                }
+         
+          });
     
-    }
+       
+    
+    };
 
     return(      
         <>
@@ -91,7 +109,7 @@ function Ingresa(){
                    </div>
                    {/* LINKEAR A TIENDA */}
                    <button onClick={Ingresa}>Ingresa</button>
-                   {user && <p>BIENVENID@</p>}
+                   
                 </Form>
                 )}
             </Formik>
