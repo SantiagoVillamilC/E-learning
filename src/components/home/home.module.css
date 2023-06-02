@@ -7,14 +7,14 @@ html{
 .cuerpo {
   /* background-color: aqua; */
   width: 100%;
-  padding-top: 8vh;
+  /* padding-top: 8vh; */
 }
 
 .header {
   margin-top: 0 ;
   display: grid;
   /* grid-template-rows: repeat(2, auto); */
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   /* background-size: cover;
   background-position: center;
@@ -181,35 +181,23 @@ h2 {
   font-size: 24px;
 }
 
-.team {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-.team-member {
-  text-align: center;
-  width: 30%;
-}
-
-.team-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
 
 .tarjetas{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #E6E6E6;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.tarjetas h2{
+  margin-bottom: 5%;
+}
+
+.disposicionTarjeta{
+  margin-bottom: 2%;
 }
 
 .sectionQue{
@@ -238,4 +226,10 @@ footer {
 }
 .imageQue img{
   height: 40vh;
+}
+.parrafo{
+  margin-top: 2%;
+}
+.sectionCo{
+  margin-bottom: 4%;
 }

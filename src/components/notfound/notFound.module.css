@@ -1,0 +1,9 @@
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+h1{
+    margin-top: 10vh;
+}

@@ -12,6 +12,7 @@ import { NotFound } from './components/notfound/notfound';
 
 import { Routes, Route} from 'react-router-dom';
 import { Nav } from './components/nav/nav';
+import ComponenteFooter from './components/footer/componenteFooter';
 
 export const App = () => {
 
@@ -41,6 +42,7 @@ export const App = () => {
       <Route path='/Programacion' element={<Programacion/>}/>
       <Route path = "*" element = {<NotFound/>}/>
     </Routes>
+    <ComponenteFooter/>
     </>
   );
 }
