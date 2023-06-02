@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 html{
   margin: 0;
   padding: 0;
@@ -9,8 +5,9 @@ html{
 }
 
 .cuerpo {
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 100%;
+  padding-top: 8vh;
 }
 
 .header {
@@ -19,22 +16,20 @@ html{
   /* grid-template-rows: repeat(2, auto); */
   height: 90vh;
   width: 100%;
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 2rem;
+  margin-top: 18%;
+  margin-left: 5%;
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: left;
+  line-height: 120%;
 }
 
-/* header nav {
-  grid-row: 1;
-  display: grid;
-  grid-template-rows: 2;
-  height: 7vh;
-  width: auto;
-  padding-top: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-} */
 .portada {
   grid-row: 2;
   display: grid;
@@ -50,7 +45,9 @@ header h1 {
 
 .contenedorTextoCabecera {
   grid-column: 1;
-  width: 50%;
+  width: 50vw;
+  backdrop-filter: blur(2px);
+  /* background-color: #E6E6E6; */
   /* text-align: center; */
   /* display: flex;
   justify-content: flex-start;
@@ -58,22 +55,24 @@ header h1 {
   flex-direction: column; */
 }
 .contenedorSlogan{
-  width: 40vw;
-  background-color: #45a049;
+  width: 35vw;
+  background-color: #3F3D56;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 
 
 .botonCrearCuentaCabecera {
-  /* background-color: brown; */
   display: block;
   width: 30%;
-  height: 4vh;
-  margin: 0 auto;
+  height: 8vh;
+  /* margin: 0 auto; */
+  margin-left: 5%;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #4caf50;
+  background-color: #3F3D56;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
@@ -84,12 +83,12 @@ header h1 {
   margin-bottom: 2%;
 }
 .botonCrearCuentaCabecera:hover {
-  background-color: #45a049;
+  background-color: #6C63FF;
   transform: scale(1.05);
 }
 
 .botonCrearCuentaCabecera:active {
-  background-color: #3e8e41;
+  background-color: #FD6584;
   transform: scale(0.95);
 }
 
@@ -102,43 +101,32 @@ header h1 {
   cursor: not-allowed;
 }
 
-/* Opcional: Estilos adicionales para un efecto de sombra al presionar el botón */
-
-.botonCrearCuentaCabecera:active:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-}
-
 .botonIngresarCabecera {
   display: block;
   width: 30%;
-  height: 4vh;
-  margin: 0 auto;
+  height: 8vh;
+  /* margin: 0 auto; */
+  margin-left: 5%;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #3498db;
+  background-color: #2F2E41;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s, transform 0.3s;
+  
 }
 
 .botonIngresarCabecera:hover {
-  background-color: #2980b9;
+  background-color: #FD6584;
   transform: scale(1.05);
 }
 
 .botonIngresarCabecera:active {
-  background-color: #21618c;
+  background-color: #FD6584;
   transform: scale(0.95);
 }
 
@@ -166,8 +154,88 @@ header h1 {
 
 .contenedorImagenCabecera {
   grid-column: 2;
-  width: 50%;
+  width: 40vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* backdrop-filter: blur(1px); */
+}
+
+
+
+/* ======================== */
+
+h1 {
+  color: #333333;
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  color: #666666;
+  font-size: 18px;
+}
+
+h2 {
+  color: #333333;
+  font-size: 24px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.team-member {
+  text-align: center;
+  width: 30%;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.tarjetas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sectionQue{
+  background-color: #3F3D56;
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.contenedorQue{
+  grid-column: 2;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.textQue{
+  grid-column: 2;
+  width: 50%;
+}
+.imageQue{
+  grid-column: 1;
+  margin-right: 5%;
+}
+.imageQue img{
+  height: 40vh;
 }

@@ -7,6 +7,7 @@ import { UserProvider } from './components/formulario/userProvider';
 
 import './App.css'
 import Home from './components/home/home';
+import Programacion from './components/producto/Programacion';
 import { NotFound } from './components/notfound/notfound';
 
 import { Routes, Route} from 'react-router-dom';
@@ -37,6 +38,7 @@ export const App = () => {
         <Route path='/Ingresa' element={<UserProvider><Ingresa/></UserProvider>} />
      
       <Route path='/Formulario' element={<Formulario/>}/>
+      <Route path='/Programacion' element={<Programacion/>}/>
       <Route path = "*" element = {<NotFound/>}/>
     </Routes>
     </>

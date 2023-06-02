@@ -1,39 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-nav{
-    width: 100%;
-    background-color: #E6E6E6;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 8vh;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+nav {
+  width: 70vw;
+  background-color: #e6e6e6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 8vh;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /* margin-left: auto;
+    margin-right: auto; */
+  padding-left: 1%;
+  padding-right: 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transform: translateX(25%);
 }
-ul{
-    grid-column: 1;
-    list-style: none;
-    display: flex;
-    gap: 10%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    font-size: 1rem;
+ul {
+  grid-column: 1;
+  list-style: none;
+  display: flex;
+  gap: 15%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 1rem;
 }
-.contenedorLogo{
-    color: #3F3D56;
-    /* color: #FD6584; */
-    grid-column: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 2rem;
-    margin-top: 1.5%;
+.contenedorLogo {
+  color: #3f3d56;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 2rem;
+  margin-top: 1.5%;
 }
-a{
-    color: #3F3D56;
+.contenedorLogo h2 {
+  font-size: 2rem;
+}
+a {
+  color: #3f3d56;
 }
