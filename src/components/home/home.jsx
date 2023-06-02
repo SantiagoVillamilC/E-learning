@@ -84,7 +84,6 @@ function Home() {
           </p>
         </section>
 
-        <section></section>
         <section className={Style.tarjetas}>
           <h2>Nuestro equipo </h2>
 
