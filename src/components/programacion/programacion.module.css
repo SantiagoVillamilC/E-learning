@@ -1,0 +1,18 @@
+.pagina{
+    padding: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.botones button{
+    /* background-color: aqua; */
+    color:  whitesmoke;
+    height: 5vh;
+    width: 5vw;
+    background-color: black;
+    margin: 0 5%;
+    margin-top: 5%;
+}

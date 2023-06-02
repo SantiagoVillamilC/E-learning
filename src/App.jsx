@@ -7,7 +7,7 @@ import { UserProvider } from './components/formulario/userProvider';
 
 import './App.css'
 import Home from './components/home/home';
-import Programacion from './components/producto/Programacion';
+import Programacion from './components/programacion/Programacion';
 import { NotFound } from './components/notfound/notfound';
 
 import { Routes, Route} from 'react-router-dom';

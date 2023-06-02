@@ -18,7 +18,7 @@ const Programacion = () => {
   };
 
   return (
-    <div>
+    <div className={Style.pagina}>
       <h1>Bienvenidos a este curso</h1>
       <div>
         {/* Reproductor de video de YouTube */}
